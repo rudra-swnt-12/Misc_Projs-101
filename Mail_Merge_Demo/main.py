@@ -11,3 +11,4 @@ with open("./Mail_Merge_Demo/Input/Letters/starting_letter.txt") as letter_file:
         new_letter = letter_content.replace(PLACEHOLDER, stripped_name)
         with open(f"./Mail_Merge_Demo/Output/ReadyToSend/letter_for_{stripped_name}.txt", mode="w") as complete_letter:
             complete_letter.write(new_letter)
+
